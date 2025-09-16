@@ -1,0 +1,25 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "app/main.py",
+      "use": "@vercel/python"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "app/main.py"
+    }
+  ],
+  "env": {
+    "YOUR_ENV_VAR": "value_if_static"  
+  },
+  "excludeFiles": [
+    "**/__pycache__/**",
+    "**/*.pyc",
+    ".venv/**",
+    "scm-venv/**",
+    "tests/**"
+  ]
+}

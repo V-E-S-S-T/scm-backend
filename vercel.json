@@ -14,12 +14,5 @@
   ],
   "env": {
     "YOUR_ENV_VAR": "value_if_static"  
-  },
-  "excludeFiles": [
-    "**/__pycache__/**",
-    "**/*.pyc",
-    ".venv/**",
-    "scm-venv/**",
-    "tests/**"
-  ]
+  }
 }
